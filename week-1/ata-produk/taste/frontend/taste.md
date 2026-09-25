@@ -1,0 +1,2 @@
+- Prefers light, minimal, interactive hero interfaces with graphical shaders or visual effects that respond to the user's cursor. Confidence: 0.98
+- Prefers AI copilot experiences to visibly reason through context before revealing the output, using purposeful staged animation. Confidence: 0.92

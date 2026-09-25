@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-25T08:30:00Z",
+  "title": "Design System: Lotus Quant",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Analytical Paper",
+        "canonical": "#f7f5ef",
+        "tonalRamp": ["#151719", "#343837", "#575d5a", "#7d837f", "#a8ada9", "#d0d2cd", "#e9e8e2", "#f7f5ef"]
+      },
+      "paper-bright": {
+        "role": "neutral",
+        "displayName": "Optical Field White",
+        "canonical": "#fcfbf7",
+        "tonalRamp": ["#171a1b", "#373b3c", "#5b6060", "#858989", "#adb1ae", "#d3d5d1", "#efeee9", "#fcfbf7"]
+      },
+      "graphite": {
+        "role": "primary",
+        "displayName": "Analytical Graphite",
+        "canonical": "#151718",
+        "tonalRamp": ["#151718", "#303334", "#4e5552", "#737a76", "#9ca19e", "#c3c6c2", "#e2e3de", "#f7f5ef"]
+      },
+      "cobalt": {
+        "role": "primary",
+        "displayName": "Analytical Cobalt",
+        "canonical": "#204fc7",
+        "tonalRamp": ["#0d1b45", "#15327f", "#204fc7", "#5275d7", "#8ca5e8", "#bac9f2", "#dfe6fa", "#f1f4fd"]
+      },
+      "vermilion": {
+        "role": "secondary",
+        "displayName": "Concentration Vermilion",
+        "canonical": "#d94525",
+        "tonalRamp": ["#3c1007", "#6f1f10", "#a93319", "#d94525", "#e7785e", "#f0a392", "#f8cbc2", "#fcede9"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Geist Display",
+        "purpose": "First-viewport product promise only."
+      },
+      "headline": {
+        "displayName": "Geist Headline",
+        "purpose": "Section reasoning and copilot conclusions."
+      },
+      "body": {
+        "displayName": "Geist Body",
+        "purpose": "Readable product explanation and analytical reasoning."
+      },
+      "label": {
+        "displayName": "Geist Mono Label",
+        "purpose": "Measurements, model states, and compact metadata."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-confident",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Confident pointer, scenario, and action continuity."
+      },
+      {
+        "name": "state-fast",
+        "value": "180ms",
+        "purpose": "Color, underline, and control state changes."
+      },
+      {
+        "name": "shader-frame-budget",
+        "value": "32ms",
+        "purpose": "Bounds the isolated WebGL field to approximately 30fps."
+      },
+      {
+        "name": "copilot-stage",
+        "value": "780ms",
+        "purpose": "Advances one inspectable copilot thought stage and draws its reasoning path."
+      },
+      {
+        "name": "copilot-scan",
+        "value": "1450ms linear",
+        "purpose": "Sweeps the context-reading beam across the reasoning graph while thinking."
+      },
+      {
+        "name": "copilot-output",
+        "value": "520ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Reveals the recommendation only after all three reasoning stages complete."
+      }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "680px" },
+      { "name": "workspace-stack", "value": "1060px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Square graphite action that moves to cobalt on hover.",
+      "html": "<button class=\"ds-btn-primary\">Explore the workspace <svg viewBox=\"0 0 18 18\" aria-hidden=\"true\"><path d=\"M3 9h11M10 5l4 4-4 4\"/></svg></button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:24px;min-height:52px;padding:0 20px;border:0;border-radius:0;background:#151718;color:#fcfbf7;font:540 14px Arial,sans-serif;cursor:pointer;transition:background-color 180ms ease,transform 180ms cubic-bezier(0.16,1,0.3,1)}.ds-btn-primary:hover{background:#204fc7;transform:translateY(-2px)}.ds-btn-primary:focus-visible{outline:2px solid #204fc7;outline-offset:4px}.ds-btn-primary svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.5}"
+    },
+    {
+      "name": "Text Action",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Low-emphasis analytical navigation with a measured underline.",
+      "html": "<button class=\"ds-text-action\">See how the copilot reasons</button>",
+      "css": ".ds-text-action{padding:0 0 3px;border:0;border-bottom:1px solid rgba(21,23,24,.3);border-radius:0;background:transparent;color:#4e5552;font:400 13px Arial,sans-serif;cursor:pointer}.ds-text-action:hover{color:#204fc7;border-color:#204fc7}.ds-text-action:focus-visible{outline:2px solid #204fc7;outline-offset:4px}"
+    },
+    {
+      "name": "Scenario Control",
+      "kind": "chip",
+      "description": "Square risk-state selector anchored over the optical field.",
+      "html": "<button class=\"ds-scenario\" aria-pressed=\"true\"><span>Correlated</span><small>64.2</small></button>",
+      "css": ".ds-scenario{display:grid;gap:3px;min-height:68px;padding:12px 14px;border:0;border-right:1px solid rgba(21,23,24,.14);border-radius:0;background:#fcfbf7;color:#151718;text-align:left;font:400 12px Arial,sans-serif}.ds-scenario span{font-weight:540;color:#204fc7}.ds-scenario small{font:500 9px monospace}.ds-scenario:hover{background:#fff}.ds-scenario:focus-visible{outline:2px solid #204fc7;outline-offset:-2px}"
+    },
+    {
+      "name": "Analytical Readout",
+      "kind": "card",
+      "description": "Flat measured state anchored at the upper edge of the shader field.",
+      "html": "<div class=\"ds-readout\"><span>MODELED RISK</span><strong>64.2</strong><small>+18.4% FROM BASELINE</small></div>",
+      "css": ".ds-readout{display:grid;gap:5px;min-width:178px;padding:10px 16px;border:1px solid rgba(21,23,24,.14);border-radius:0;background:rgba(252,251,247,.93);text-align:right}.ds-readout span,.ds-readout small{color:#737a76;font:500 8px/1.4 monospace;letter-spacing:.1em}.ds-readout strong{color:#204fc7;font:450 22px/1 monospace;letter-spacing:-.04em}"
+    },
+    {
+      "name": "Site Header",
+      "kind": "nav",
+      "description": "Sparse light navigation with centered platform links.",
+      "html": "<header class=\"ds-header\"><strong>LOTUS QUANT</strong><nav><a href=\"#risk\">Risk model</a><a href=\"#copilot\">Copilot</a><a href=\"#principles\">Principles</a></nav><a href=\"#risk\">Open workspace</a></header>",
+      "css": ".ds-header{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;min-height:72px;padding:0 40px;border-bottom:1px solid rgba(21,23,24,.14);background:#f7f5ef;color:#151718;font:400 13px Arial,sans-serif}.ds-header strong{font-size:14px}.ds-header nav{display:flex;gap:36px}.ds-header a{color:#4e5552}.ds-header a:last-child{justify-self:end}.ds-header a:hover{color:#204fc7}.ds-header a:focus-visible{outline:2px solid #204fc7;outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Analytical Lens",
+    "overview": "Lotus Quant is a quiet professional interface built around one recurring act: placing attention onto a complicated portfolio signal. The optical risk field visualizes exposure as coherent channels and turns the pointer into a movable analytical lens. Graphite type carries authority; cobalt marks analytical action; vermilion identifies concentrated risk. Surfaces stay flat and open, using hairlines, whitespace, optical overlap, and state changes instead of dashboard chrome.",
+    "keyCharacteristics": [
+      "Pointer movement changes the model visualization directly.",
+      "One optical field carries the product mechanism.",
+      "Light paper surfaces and hairline construction keep the interface calm.",
+      "Cobalt communicates analysis; vermilion is reserved for risk concentration.",
+      "Synthetic or illustrative data is labeled wherever it could be mistaken for live output."
+    ],
+    "rules": [
+      {
+        "name": "The Signal Restraint Rule",
+        "body": "Cobalt and vermilion describe model state, not decoration. They belong in the field, selected controls, focus states, and risk conclusions—not as ambient backgrounds.",
+        "section": "colors"
+      },
+      {
+        "name": "The Analysis Before Costume Rule",
+        "body": "Use monospace for data and measurements, never as the default display voice.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat-By-Default Rule",
+        "body": "If depth is needed, add information or optical overlap—not a shadow.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Constructed Geometry Rule",
+        "body": "Curves live inside the analytical field; controls and reading surfaces stay sharply constructed.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do let pointer movement alter the analytical field within a bounded, useful region.",
+      "Do reserve cobalt for analysis and vermilion for concentrated risk.",
+      "Do keep synthetic data explicitly labeled.",
+      "Do use square controls, tabular measurements, and visible focus states.",
+      "Do pause shader work offscreen and preserve keyboard scenario control."
+    ],
+    "donts": [
+      "Don't add neon glow, dark terminal panels, glass cards, or dashboard-card grids.",
+      "Don't use the shader as ambient decoration unrelated to portfolio state.",
+      "Don't use monospace as the display face.",
+      "Don't hide decorative canvas content without semantic text and keyboard-equivalent controls.",
+      "Don't use rounded pill containers or icons as substitutes for clear labels."
+    ]
+  }
+}
