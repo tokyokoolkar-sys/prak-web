@@ -1,0 +1,5 @@
+* e65669e feat: initialize Next.js web application layout, styling, and configuration files
+* 884a4d7 chore: remove unused file
+* 77b8a82 chore: remove unused file
+* 3053c3d feat: modify page.tsx
+* ee15e4e Initialize Next.js project with essential configurations and files

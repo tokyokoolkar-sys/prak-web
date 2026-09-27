@@ -1,0 +1,8 @@
+
+Microsoft Windows [Version 10.0.26100.4946]
+v26.7.0
+12.0.2
+git version 2.55.0.windows.3
+1.124.2
+6928394f91b684055b873eecb8bc281365131f1c
+x64

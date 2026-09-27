@@ -1,0 +1,110 @@
+commit e65669ed76554a841dfb68c71f3a5073891dec37
+Author:     tokyokoolkar-sys <tokyokoolkar@gmail.com>
+AuthorDate: Fri Sep 25 16:16:09 2026 +0700
+Commit:     tokyokoolkar-sys <tokyokoolkar@gmail.com>
+CommitDate: Fri Sep 25 16:16:09 2026 +0700
+
+    feat: initialize Next.js web application layout, styling, and configuration files
+
+ week-1/ata-produk/.gitignore                       |   41 +
+ week-1/ata-produk/.impeccable/design.json          |  180 +
+ .../.impeccable/surfaces/app-page-tsx.md           |   25 +
+ week-1/ata-produk/AGENTS.md                        |    9 +
+ week-1/ata-produk/CLAUDE.md                        |    1 +
+ week-1/ata-produk/DESIGN.md                        |  201 +
+ week-1/ata-produk/PRODUCT.md                       |   46 +
+ week-1/ata-produk/README.md                        |   36 +
+ week-1/ata-produk/app/favicon.ico                  |  Bin 0 -> 25931 bytes
+ week-1/ata-produk/app/globals.css                  | 1023 +++
+ week-1/ata-produk/app/layout.tsx                   |   30 +
+ week-1/ata-produk/app/page.tsx                     |  665 ++
+ week-1/ata-produk/eslint.config.mjs                |   18 +
+ week-1/ata-produk/next.config.ts                   |    7 +
+ week-1/ata-produk/package-lock.json                | 6895 ++++++++++++++++++++
+ week-1/ata-produk/package.json                     |   26 +
+ week-1/ata-produk/postcss.config.mjs               |    7 +
+ week-1/ata-produk/public/file.svg                  |    1 +
+ week-1/ata-produk/public/globe.svg                 |    1 +
+ week-1/ata-produk/public/next.svg                  |    1 +
+ week-1/ata-produk/public/vercel.svg                |    1 +
+ week-1/ata-produk/public/window.svg                |    1 +
+ week-1/ata-produk/taste/frontend/taste.md          |    2 +
+ week-1/ata-produk/taste/taste.md                   |    0
+ week-1/ata-produk/tsconfig.json                    |   34 +
+ week-1/lotus-quant                                 |    1 -
+ 26 files changed, 9251 insertions(+), 1 deletion(-)
+
+commit 884a4d7047fa176f8614184178266c6568ba5e96
+Author:     tokyokoolkar-sys <tokyokoolkar@gmail.com>
+AuthorDate: Fri Sep 25 16:13:10 2026 +0700
+Commit:     tokyokoolkar-sys <tokyokoolkar@gmail.com>
+CommitDate: Fri Sep 25 16:13:10 2026 +0700
+
+    chore: remove unused file
+
+ week-1/nama-produk/.gitignore         |  41 --------------------
+ week-1/nama-produk/README.md          |  36 ------------------
+ week-1/nama-produk/app/favicon.ico    | Bin 25931 -> 0 bytes
+ week-1/nama-produk/app/globals.css    |  26 -------------
+ week-1/nama-produk/app/layout.tsx     |  29 --------------
+ week-1/nama-produk/app/page.tsx       |  69 ----------------------------------
+ week-1/nama-produk/eslint.config.mjs  |  18 ---------
+ week-1/nama-produk/next.config.ts     |   7 ----
+ week-1/nama-produk/package.json       |  26 -------------
+ week-1/nama-produk/postcss.config.mjs |   7 ----
+ week-1/nama-produk/public/file.svg    |   1 -
+ week-1/nama-produk/public/globe.svg   |   1 -
+ week-1/nama-produk/public/next.svg    |   1 -
+ week-1/nama-produk/public/vercel.svg  |   1 -
+ week-1/nama-produk/public/window.svg  |   1 -
+ week-1/nama-produk/tsconfig.json      |  34 -----------------
+ 16 files changed, 298 deletions(-)
+
+commit 77b8a8271a3fb9240e0a63afd556a7887d8b098b
+Author:     tokyokoolkar-sys <tokyokoolkar@gmail.com>
+AuthorDate: Fri Sep 25 16:07:06 2026 +0700
+Commit:     tokyokoolkar-sys <tokyokoolkar@gmail.com>
+CommitDate: Fri Sep 25 16:07:06 2026 +0700
+
+    chore: remove unused file
+
+ .commandcode/taste/taste.md | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 3053c3d38a361307460c09fc56e1f5f7a340bd4d
+Author:     tokyokoolkar-sys <tokyokoolkar@gmail.com>
+AuthorDate: Fri Sep 25 16:04:47 2026 +0700
+Commit:     tokyokoolkar-sys <tokyokoolkar@gmail.com>
+CommitDate: Fri Sep 25 16:04:47 2026 +0700
+
+    feat: modify page.tsx
+
+ .commandcode/taste/taste.md | 0
+ week-1/lotus-quant          | 1 +
+ 2 files changed, 1 insertion(+)
+
+commit ee15e4e16e4548438ccbb206e2ef54a1377b4968
+Author:     barunapasha <baruna.pasha98@gmail.com>
+AuthorDate: Fri Sep 25 15:10:59 2026 +0700
+Commit:     barunapasha <baruna.pasha98@gmail.com>
+CommitDate: Fri Sep 25 15:10:59 2026 +0700
+
+    Initialize Next.js project with essential configurations and files
+
+ week-1/nama-produk/.gitignore         |  41 ++++++++++++++++++++
+ week-1/nama-produk/README.md          |  36 ++++++++++++++++++
+ week-1/nama-produk/app/favicon.ico    | Bin 0 -> 25931 bytes
+ week-1/nama-produk/app/globals.css    |  26 +++++++++++++
+ week-1/nama-produk/app/layout.tsx     |  29 ++++++++++++++
+ week-1/nama-produk/app/page.tsx       |  69 ++++++++++++++++++++++++++++++++++
+ week-1/nama-produk/eslint.config.mjs  |  18 +++++++++
+ week-1/nama-produk/next.config.ts     |   7 ++++
+ week-1/nama-produk/package.json       |  26 +++++++++++++
+ week-1/nama-produk/postcss.config.mjs |   7 ++++
+ week-1/nama-produk/public/file.svg    |   1 +
+ week-1/nama-produk/public/globe.svg   |   1 +
+ week-1/nama-produk/public/next.svg    |   1 +
+ week-1/nama-produk/public/vercel.svg  |   1 +
+ week-1/nama-produk/public/window.svg  |   1 +
+ week-1/nama-produk/tsconfig.json      |  34 +++++++++++++++++
+ 16 files changed, 298 insertions(+)
