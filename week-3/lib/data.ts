@@ -1,0 +1,44 @@
+import type { Item } from "./type";
+
+export const listItem: Item[] = [
+    {
+        id: 1,
+        title: "Rerata Suhu",
+        category: "Environment",
+        image: "",
+        description: "Data rerata suhu di kampus ITB",
+        availability: true,
+    },
+    {
+        id: 2,
+        title: "Status Kipas Angin",
+        category: "Campus",
+        image: "",
+        description: "Data status kipas angin di setiap kelas",
+        availability: false,
+    },
+    {
+        id: 3,
+        title: "Status Lampu",
+        category: "Campus",
+        image: "",
+        description: "Data status lampu di setiap kelas",
+        availability: true,
+    },
+    {
+        id: 4,
+        title: "Status AC",
+        category: "Energy",
+        image: "",
+        description: "Data status AC di setiap ruangan",
+        availability: true,
+    },
+    {
+        id: 5,
+        title: "Status Exhaust Fan",
+        category: "Environment",
+        image: "",
+        description: "Data status exhaust fan di setiap ruangan",
+        availability: false,
+    }
+]
